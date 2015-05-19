@@ -4,8 +4,8 @@
 
   #landing-header {
     @include span-columns(12);
-    height: 35vh;
-    background-image: image-url('landing-header.jpg');
+    height: 50vh;
+    background-image: image-url('landing/header.jpg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
 
@@ -30,7 +30,7 @@
       justify-content: center;
 
       #landing-play-icon {
-        @include size(75px);
+        @include size(50px);
       }
     }
 
@@ -71,21 +71,48 @@
 
   #landing-content {
     @include span-columns(12);
-    height: 55vh;
+    height: 45vh;
 
     #landing-how-it-works {
-      @include span-columns(12);
-      height: 15vh;
+      @include span-columns(8);
+      @include shift(2);
+      height: 10vh;
+
+      #landing-work-steps {
+        clear: both;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1em;
+        text-align: center;
+
+        #landing-upload {
+          #landing-upload-icon {
+            @include size(50px);
+          }
+        }
+
+        #landing-personalize {
+          #landing-personalize-icon {
+            @include size(50px);
+          }
+        }
+
+        #landing-watch {
+          #landing-watch-icon {
+            @include size(50px);
+          }
+        }
+      }
     }
 
     #landing-cases {
       @include span-columns(12);
-      height: 15vh;
+      height: 12.5vh;
     }
 
     #landing-our-editors {
       @include span-columns(12);
-      height: 15vh;
+      height: 12.5vh;
     }
 
     #landing-pricing {
