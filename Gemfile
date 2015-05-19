@@ -13,6 +13,8 @@ gem 'slim-rails', '~> 3.0.1'
 gem 'turbolinks', '~> 2.5.3'
 gem 'uglifier', '~> 2.7.1'
 
+gem 'rails_12factor', '~> 0.0.3', group: :production
+
 group :development, :test do
   gem 'spring', '~> 1.3.6'
 end
