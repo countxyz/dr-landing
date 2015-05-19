@@ -1,0 +1,44 @@
+#landing {
+  @include span-columns(12);
+  height: 100vh;
+
+  #landing-header {
+    @include span-columns(12);
+    height: 10vh;
+  }
+
+  #landing-content {
+    @include span-columns(12);
+    height: 80vh;
+
+    #landing-how-it-works {
+      @include span-columns(12);
+      height: 15vh;
+    }
+
+    #landing-cases {
+      @include span-columns(12);
+      height: 20vh;
+    }
+
+    #landing-our-editors {
+      @include span-columns(12);
+      height: 20vh;
+    }
+
+    #landing-pricing {
+      @include span-columns(12);
+      height: 25vh;
+    }
+
+    #landing-get-started {
+      @include span-columns(12);
+      height: 10vh;
+    }
+  }
+
+  #landing-footer {
+    @include span-columns(12);
+    height: 10vh;
+  }
+}
