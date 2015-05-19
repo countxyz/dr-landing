@@ -12,6 +12,5 @@
 .Spotlight-V100
 .Trashes
 
-config/secrets.yml
 log/*
 tmp/*

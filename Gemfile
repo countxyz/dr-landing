@@ -15,7 +15,11 @@ gem 'uglifier', '~> 2.7.1'
 
 gem 'rails_12factor', '~> 0.0.3', group: :production
 
-group :development, :test do
-  gem 'spring', '~> 1.3.6'
-end
+gem 'spring', '~> 1.3.6', group: %i(development test)
 
+group :development do
+  gem 'better_errors', '~> 2.1.1'
+  gem 'binding_of_caller', '~> 0.7.2'
+  gem 'meta_request', '~> 0.3.4'
+  gem 'pry-rails', '~> 0.3.4'
+end
