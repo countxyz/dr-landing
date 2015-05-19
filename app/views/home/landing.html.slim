@@ -1,8 +1,30 @@
 section#landing
   header#landing-header role='banner'
     section#landing-title
+      section#landing-dir-logo
+        = image_tag 'dir-logo.png', size: '200x30'
+
+      nav#landing-site-navigation role='navigation'
+        ul
+          li = link_to 'how it works', '#'
+          li = link_to 'cases',        '#'
+          li = link_to 'pricing',      '#'
+          li = link_to 'FAQ',          '#'
+
     section#landing-carousel
-    section#sign-up
+      = image_tag 'play_icon.svg', id: 'landing-play-icon'
+
+    section#landing-carousel-title
+      h1 GET YOUR RAW FOOTAGE PROFESSIONALY EDITED
+
+    section#landing-carousel-subtitle
+      h2 SHOOT IT. UPLOAD IT. WE DO THE REST.
+
+    section#landing-sign-up
+      input.landing-input type='text' placeholder='Name'
+      input.landing-input type='text' placeholder='Email'
+      button.btn-landing#btn-get-started Get Started
+      button.btn-landing#btn-facebook Log in with Facebook
 
   section#landing-content
     section#landing-how-it-works

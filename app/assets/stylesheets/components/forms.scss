@@ -1,0 +1,10 @@
+.landing-input {
+  background-color: transparent;
+  border: solid 1px white;
+  color: white;
+}
+
+.landing-input::-webkit-input-placeholder { color: white; }
+.landing-input:-moz-placeholder           { color: white; }
+.landing-input::-moz-placeholder          { color: white; }
+.landing-input:-ms-input-placeholder      { color: white; }
