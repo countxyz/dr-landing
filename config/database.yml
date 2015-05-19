@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: dr-landing_development
+
+test:
+  <<: *default
+  database: dr-landing_test
+
+production:
+  <<: *default
+  database: dr-landing_production
+  username: dr-landing
+  password: <%= ENV['DR-LANDING_DATABASE_PASSWORD'] %>
