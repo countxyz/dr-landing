@@ -88,6 +88,26 @@
   }
 }
 
+#landing-get-started {
+  @include size(100px);
+  @include span-columns(12);
+  background: #16A085;
+
+  #landing-get-started-content {
+    @include span-columns(12);
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #16A085;
+    color: white;
+
+    span {
+      padding-right: 50px;
+    }
+  }
+}
 
 #facebook-editor, #twitter-editor { @include size(30px); }
 
