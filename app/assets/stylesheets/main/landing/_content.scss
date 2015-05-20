@@ -36,6 +36,11 @@
   #landing-cases {
     @include span-columns(12);
     background: #EBEBEB;
+
+    section#landing-cases-cards {
+      @include span-columns(10);
+      @include shift(1);
+    }
   }
 
   #landing-our-editors {
