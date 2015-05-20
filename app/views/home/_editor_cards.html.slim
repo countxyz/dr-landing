@@ -1,0 +1,45 @@
+.wrap
+  button.btn-arrow.btn-editors.toggle
+
+  ul.carousel.is-set
+    li.carousel-seat.carousel-editor
+      = image_tag 'landing/editors/bill.gif'
+      p.editor-title Bill Lumbergh
+      p.editor-position Chief Editor
+      = render 'gangsta_lorem_ipsum'
+      = render 'editor_social_media'
+
+    li.carousel-seat.carousel-editor
+      = image_tag 'landing/editors/michael.jpg'
+      p.editor-title Michael Bolton
+      p.editor-position Video Editor
+      = render 'gangsta_lorem_ipsum'
+      = render 'editor_social_media'
+
+    li.carousel-seat.carousel-editor
+      = image_tag 'landing/editors/peter.jpg'
+      p.editor-title Peter Gibbons
+      p.editor-position Video Editor
+      = render 'gangsta_lorem_ipsum'
+      = render 'editor_social_media'
+
+    li.carousel-seat.carousel-editor
+      = image_tag 'landing/editors/samir.jpg'
+      p.editor-title Samir Nagheenanajar
+      p.editor-position Editor Assistant
+      = render 'gangsta_lorem_ipsum'
+      = render 'editor_social_media'
+
+    li.carousel-seat.carousel-editor.is-ref
+      = image_tag 'landing/editors/milton.jpg'
+      p.editor-title Milton Waddams
+      p.editor-position Video Editor?
+      = render 'gangsta_lorem_ipsum'
+      = render 'editor_social_media'
+
+.controls
+  button.btn-arrow.btn-editors.toggle
+    = image_tag 'actions/arrow-left.svg', class: 'arrow-left'
+
+  button.btn-arrow.btn-editors.toggle data-toggle='next'
+    = image_tag 'actions/arrow-right.svg', class: 'arrow-right'

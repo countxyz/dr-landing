@@ -44,7 +44,8 @@
   }
 
   #landing-our-editors {
-    @include span-columns(12);
+    @include span-columns(10);
+    @include shift(1);
   }
 
   #landing-pricing {
@@ -53,5 +54,54 @@
 
   #landing-get-started {
     @include span-columns(12);
+  }
+}
+
+.carousel-editor {
+  height: 350px;
+  width: 250px;
+
+  img {
+    display: block;
+    height: 200px;
+    width: 250px;
+    margin: 0 auto;
+  }
+
+  .editor-title {
+    margin: 0.8em 0.8em 0.1em 0.8em;
+    text-align: center;
+  }
+
+  .editor-position {
+    color: #16A085;
+    font-size: 0.8em;
+    font-style: italic;
+    margin-top: 0.1em;
+    text-align: center;
+  }
+
+  .editor-description {
+    font-size: 0.7em;
+    text-align: center;
+    margin: 0 2em;
+  }
+}
+
+
+#facebook-editor, #twitter-editor { @include size(30px); }
+
+.arrow-left, .arrow-right { @include size(50px); }
+
+.editor-social-media {
+  ul {
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+    width: 300px;
+
+    li {
+      display: inline;
+    }
   }
 }
