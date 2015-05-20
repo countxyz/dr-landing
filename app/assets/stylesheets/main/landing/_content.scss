@@ -88,6 +88,43 @@
   }
 }
 
+#landing-pricing {
+  @include span-columns(12);
+  background: #EBEBEB;
+  height: 550px;
+
+  #landing-pricing-table {
+    @include span-columns(10);
+    @include shift(1);
+    display: flex;
+    height: 400px;
+    justify-content: space-between;
+    padding-top: 50px;
+
+    #landing-teaser-reel {
+      @include span-columns(3 of 10);
+      border: 1px solid #16A085;
+      padding: 15px;
+      text-align: center;
+    }
+
+    #landing-premium-reel {
+      @include span-columns(3 of 10);
+      border: 1px solid #16A085;
+      padding: 15px;
+      text-align: center;
+    }
+
+    #landing-vip-reel {
+      @include span-columns(3 of 10);
+      border: 1px solid #16A085;
+      padding: 15px;
+      text-align: center;
+
+    }
+  }
+}
+
 #landing-get-started {
   @include size(100px);
   @include span-columns(12);
@@ -109,7 +146,14 @@
   }
 }
 
-#facebook-editor, #twitter-editor { @include size(30px); }
+#facebook-editor,
+#twitter-editor {
+  @include size(30px);
+}
+
+.pricing-table-play {
+  @include size(20px);
+}
 
 .arrow-left, .arrow-right { @include size(50px); }
 
@@ -125,3 +169,10 @@
     }
   }
 }
+
+.reel-pricing {
+  font-size: 2em;
+  color: #16A085;
+}
+
+.get-started-wrap { margin-top: 70px; }
