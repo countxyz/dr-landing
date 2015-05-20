@@ -1,0 +1,52 @@
+#landing-content {
+  @include span-columns(12);
+
+  #landing-how-it-works {
+    @include span-columns(8);
+    @include shift(2);
+    padding: 1em 0;
+
+    #landing-work-steps {
+      clear: both;
+      display: flex;
+      justify-content: space-between;
+      padding: 2em 0;
+      text-align: center;
+
+      #landing-upload {
+        #landing-cloud-icon {
+          @include size(50px);
+        }
+      }
+
+      #landing-personalize {
+        #landing-pencil-icon {
+          @include size(50px);
+        }
+      }
+
+      #landing-watch {
+        #landing-screen-icon {
+          @include size(50px);
+        }
+      }
+    }
+  }
+
+  #landing-cases {
+    @include span-columns(12);
+    background: #EBEBEB;
+  }
+
+  #landing-our-editors {
+    @include span-columns(12);
+  }
+
+  #landing-pricing {
+    @include span-columns(12);
+  }
+
+  #landing-get-started {
+    @include span-columns(12);
+  }
+}

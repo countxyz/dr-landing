@@ -1,0 +1,17 @@
+section#landing-footer-logo
+  = image_tag 'site/logo-green.png'
+
+nav#landing-footer-links
+  ul
+    li = link_to 'FAQ',              '#'
+    li = link_to 'Contact',          '#'
+    li = link_to 'Terms of Service', '#'
+
+nav#landing-footer-social_media
+  ul
+    li = link_to( image_tag('landing/facebook_circle_gray.svg', id: 'facebook'),
+      '#', target: '_blank' )
+    li = link_to( image_tag('landing/twitter_circle_gray.svg', id: 'twitter'),
+      '#', target: '_blank' )
+    li = link_to( image_tag('landing/youtube_circle_gray.svg', id: 'youtube'),
+      '#', target: '_blank' )

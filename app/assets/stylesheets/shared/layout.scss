@@ -3,7 +3,4 @@ body {
   min-height: 100vh;
 }
 
-main {
-  @include span-columns(12);
-  height: 100vh;
-}
+main { @include span-columns(12); }

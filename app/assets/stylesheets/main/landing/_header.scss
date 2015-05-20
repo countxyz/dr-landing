@@ -1,0 +1,71 @@
+#landing-header {
+  background-image: image-url('landing/header.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  #landing-title {
+    display: flex;
+    justify-content: space-between;
+
+    #landing-dir-logo {
+      img {
+        @include size(200px 30px);
+      }
+    }
+
+    #landing-site-navigation {
+      ul li {
+        display: inline-block;
+        padding-right: 1em;
+
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+
+  #landing-carousel {
+    display: flex;
+    justify-content: center;
+
+    #landing-play-icon {
+      @include size(75px);
+    }
+  }
+
+  #landing-carousel-title {
+    display: flex;
+    justify-content: center;
+
+    h1 {
+      color: white;
+      font-size: 1.5em;
+    }
+  }
+
+  #landing-carousel-subtitle {
+    display: flex;
+    justify-content: center;
+
+    span {
+      color: white;
+      font-size: 1.2em;
+    }
+  }
+
+  #landing-sign-up {
+    display: flex;
+    justify-content: center;
+    padding: 75px 0;
+
+    .landing-input {
+      padding: 0.5em;
+      margin-right: 1em;
+    }
+
+    .btn-landing {
+      margin-right: 1em;
+    }
+  }
+}
