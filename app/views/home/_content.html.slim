@@ -25,12 +25,21 @@ section#landing-cases
   section#landing-cases-cards
     = render 'cases_cards'
 
-section#landing-our-editors
+section#landing-editors
   h2.text-center OUR EDITORS
   p.text-center Meet the team behind Dreamitreel
 
-  section#landing-cases-editors
-    = render 'editor_cards'
+  section#landing-editors-arrow-left
+    button.btn-arrow.btn-editors.toggle
+      = image_tag 'actions/arrow-left.svg', class: 'arrow-left'
+
+
+  section#landing-editors-carousel
+    = render 'editor_carousel'
+
+  section#landing-editors-arrow-right
+    button.btn-arrow.btn-editors.toggle data-toggle='next'
+      = image_tag 'actions/arrow-right.svg', class: 'arrow-right'
 
 section#landing-pricing
   h2.text-center Pricing

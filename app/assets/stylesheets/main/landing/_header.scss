@@ -8,12 +8,16 @@
     justify-content: space-between;
 
     #landing-dir-logo {
+      padding: 1em;
+
       img {
         @include size(200px 30px);
       }
     }
 
     #landing-site-navigation {
+      padding-right: 1em;
+
       ul li {
         display: inline-block;
         padding-right: 1em;
@@ -57,7 +61,7 @@
   #landing-sign-up {
     display: flex;
     justify-content: center;
-    padding: 75px 0;
+    padding: 150px 0 100px 0;
 
     .landing-input {
       padding: 0.5em;

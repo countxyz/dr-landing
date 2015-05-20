@@ -1,18 +1,19 @@
 .wrap { overflow: hidden; }
 
 .carousel {
+  @include position(relative, null null null -100%);
   display: flex;
   justify-content: space-between;
-  left: -100%;
   list-style: none;
   margin: 0;
   padding: 0;
-  position: relative;
   transform: translateX(100%);
+
   @media (min-width: 30em) {
     left: -50%;
     transform: translateX(50%);
   }
+
   @media (min-width: 40em) {
     left: -33.33333%;
     transform: translateX(33.33333%);
@@ -47,20 +48,3 @@
 }
 
 .carousel-seat.is-ref { order: 1; }
-
-.controls {
-  padding: 2em;
-  text-align: center;
-
-  button {
-    border: 0;
-    border-radius: 0.25em;
-    color: #eeeeee;
-    padding: 0.5em 1em;
-
-    &:hover,
-    &:focus {
-      background: #16A085;
-    }
-  }
-}

@@ -7,16 +7,22 @@
   text-align: center;
 }
 
-.btn-get-started { background: #16A085; }
+.btn-get-started {
+  background: #16A085;
+  width: 200px;
+}
 
-#btn-facebook { background: #3B5998; }
+#btn-facebook {
+  background: #3B5998;
+  width: 200px;
+}
 
 .btn-arrow {
   background: transparent;
   border: 0;
 }
 
-#btn-get-started-section {
+#btn-get-started-section, #btn-sign-in {
   background: transparent;
   border: 2px white solid;
 }

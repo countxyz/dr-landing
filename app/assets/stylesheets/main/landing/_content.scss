@@ -43,9 +43,28 @@
     }
   }
 
-  #landing-our-editors {
-    @include span-columns(10);
-    @include shift(1);
+  #landing-editors {
+    @include span-columns(12);
+
+    #landing-editors-arrow-left {
+      @include span-columns(1 of 12);
+
+      .btn-arrow {
+        padding-top: 100px;
+      }
+    }
+
+    #landing-editors-carousel {
+      @include span-columns(10 of 12);
+    }
+
+    #landing-editors-arrow-right {
+      @include span-columns(1 of 12);
+
+      .btn-arrow {
+        padding-top: 100px;
+      }
+    }
   }
 
   #landing-pricing {
@@ -146,29 +165,9 @@
   }
 }
 
-#facebook-editor,
-#twitter-editor {
-  @include size(30px);
-}
-
-.pricing-table-play {
-  @include size(20px);
-}
+.pricing-table-play { @include size(20px); }
 
 .arrow-left, .arrow-right { @include size(50px); }
-
-.editor-social-media {
-  ul {
-    display: flex;
-    justify-content: center;
-    padding-top: 1em;
-    width: 300px;
-
-    li {
-      display: inline;
-    }
-  }
-}
 
 .reel-pricing {
   font-size: 2em;

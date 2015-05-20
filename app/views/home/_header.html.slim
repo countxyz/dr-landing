@@ -4,10 +4,9 @@ section#landing-title
 
   nav#landing-site-navigation role='navigation'
     ul
-      li = link_to 'how it works', '#'
-      li = link_to 'cases',        '#'
-      li = link_to 'pricing',      '#'
-      li = link_to 'FAQ',          '#'
+      li = link_to 'FAQ', '#'
+      li
+        button.btn-landing#btn-sign-in Sign In
 
 section#landing-carousel
   = image_tag 'actions/audio-video-outline-play.svg', id: 'landing-play-icon'
