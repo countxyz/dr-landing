@@ -2,33 +2,33 @@ section#landing-how-it-works
   = render 'how_it_works'
 
 section#landing-cases
-  h2.text-center CASES
-  p.text-center See what we've done for others!
+  h2.cases-title CASES
+  p.cases-subtitle See what we've done for others!
 
   section#landing-cases-arrow-left
-    button.btn-arrow.btn-editors.toggle
+    button.btn-arrow.toggle-cases
       = image_tag 'actions/arrow-left.svg', class: 'arrow-left'
 
   section#landing-cases-carousel
     = render 'cases_carousel'
 
   section#landing-cases-arrow-right
-    button.btn-arrow.btn-editors.toggle data-toggle='next-editor'
+    button.btn-arrow.toggle-cases data-toggle='next'
       = image_tag 'actions/arrow-right.svg', class: 'arrow-right'
 
 section#landing-editors
-  h2.text-center OUR EDITORS
-  p.text-center Meet the team behind Dreamitreel
+  h2.editors-title OUR EDITORS
+  p.editors-subtitle Meet the team behind Dreamitreel
 
   section#landing-editors-arrow-left
-    button.btn-arrow.btn-editors.toggle-editors
+    button.btn-arrow.toggle-editors
       = image_tag 'actions/arrow-left.svg', class: 'arrow-left'
 
   section#landing-editors-carousel
     = render 'editor_carousel'
 
   section#landing-editors-arrow-right
-    button.btn-arrow.btn-editors.toggle-editors data-toggle='next'
+    button.btn-arrow.toggle-editors data-toggle='next-editor'
       = image_tag 'actions/arrow-right.svg', class: 'arrow-right'
 
 section#landing-pricing

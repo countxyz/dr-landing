@@ -2,14 +2,14 @@
   @include size(100px);
   @include span-columns(12);
   background: #141414;
+  display: flex;
+  justify-content: space-between;
 
   #landing-footer-logo {
-    @include span-columns(3);
-    @include shift(1);
-    display: flex;
+    @include span-columns(4);
     align-items: center;
+    display: flex;
     justify-content: center;
-    height: 100%;
 
     img {
       @include size(200px 30px);
@@ -17,13 +17,10 @@
   }
 
   #landing-footer-links {
-    @include span-columns(3);
-    @include shift(1);
-
-    display: flex;
+    @include span-columns(4);
     align-items: center;
+    display: flex;
     justify-content: center;
-    height: 100%;
 
     ul li {
       display: inline-block;
@@ -36,12 +33,10 @@
   }
 
   #landing-footer-social_media {
-    @include span-columns(3);
-    @include shift(1);
-
+    @include span-columns(4);
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    height: 100%;
 
     ul li {
       display: inline;
