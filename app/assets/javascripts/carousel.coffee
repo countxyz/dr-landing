@@ -1,0 +1,23 @@
+$ ->
+  carousel = $('.carousel')
+  seats = $('.carousel-seat')
+
+  next = (el) -> if el.next().length > 0 then el.next() else seats.first()
+  prev = (el) -> if el.prev().length > 0 then el.prev() else seats.last()
+
+  $('.toggle').on('click', (e) ->
+    el = $('.is-ref').removeClass('is-ref')
+
+    if $(e.currentTarget).data('toggle') is 'next'
+      new_seat = next(el)
+      carousel.removeClass('is-reversing')
+    else
+      new_seat = prev(el)
+      carousel.addClass('is-reversing')
+
+    new_seat.addClass('is-ref').css('order', 1)
+    new_seat = next(new_seat).css('order', i) for i in [2..seats.length]
+
+    carousel.removeClass('is-set')
+    setTimeout (-> carousel.addClass('is-set')), 50
+  )

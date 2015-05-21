@@ -1,49 +1,46 @@
 section#landing-how-it-works
-  h2.text-center HOW IT WORKS
-
-  section#landing-work-steps
-    section#landing-upload
-      = image_tag 'landing/cloud-icon.svg', id: 'landing-cloud-icon'
-      h3 Upload
-      span Easily upload your raw videos and photos
-
-    section#landing-personalize
-      = image_tag 'landing/pencil-icon.svg', id: 'landing-pencil-icon'
-      h3 Personalize
-      span Choose a package and provide comments
-
-    section#landing-watch
-      = image_tag 'landing/screen-icon.svg', id: 'landing-screen-icon'
-      h3 Watch
-      span Receive your custom video crafted by a professional
+  = render 'how_it_works'
 
 section#landing-cases
-  section#lading-cases-title
-    h2.text-center CASES
-    p.text-center See what we've done for others!
+  h2.text-center CASES
+  p.text-center See what we've done for others!
 
-  section#landing-cases-cards
-    = render 'cases_cards'
+  section#landing-cases-arrow-left
+    button.btn-arrow.btn-editors.toggle
+      = image_tag 'actions/arrow-left.svg', class: 'arrow-left'
+
+  section#landing-cases-carousel
+    = render 'cases_carousel'
+
+  section#landing-cases-arrow-right
+    button.btn-arrow.btn-editors.toggle data-toggle='next-editor'
+      = image_tag 'actions/arrow-right.svg', class: 'arrow-right'
 
 section#landing-editors
   h2.text-center OUR EDITORS
   p.text-center Meet the team behind Dreamitreel
 
   section#landing-editors-arrow-left
-    button.btn-arrow.btn-editors.toggle
+    button.btn-arrow.btn-editors.toggle-editors
       = image_tag 'actions/arrow-left.svg', class: 'arrow-left'
-
 
   section#landing-editors-carousel
     = render 'editor_carousel'
 
   section#landing-editors-arrow-right
-    button.btn-arrow.btn-editors.toggle data-toggle='next'
+    button.btn-arrow.btn-editors.toggle-editors data-toggle='next'
       = image_tag 'actions/arrow-right.svg', class: 'arrow-right'
 
 section#landing-pricing
   h2.text-center Pricing
   p.text-center Choose the package that fits your needs
+
+  section#landing-pricing-table-header
+    section#landing-teaser-reel-header
+    section#landing-premium-reel-header
+      p Most Popular
+    section#landing-vip-reel-header
+
 
   section#landing-pricing-table
     = render 'pricing_tables'

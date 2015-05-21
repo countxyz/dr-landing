@@ -14,3 +14,19 @@ Missing assets that we need.
 
 * Play Button
 * f icon in 'Log in with Facebook'
+
+### How it Works
+
+* Upload Icon
+* Personalize Icon
+* Watch Icon
+
+### Cases
+
+* Extreme Sports Icon
+* Personal Icon
+* Wedding Events Icon
+
+### Pricing
+
+* Background image

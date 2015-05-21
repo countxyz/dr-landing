@@ -10,41 +10,57 @@
       clear: both;
       display: flex;
       justify-content: space-between;
-      padding: 2em 0;
+      padding: 4em 0;
       text-align: center;
-
-      #landing-upload {
-        #landing-cloud-icon {
-          @include size(50px);
-        }
-      }
-
-      #landing-personalize {
-        #landing-pencil-icon {
-          @include size(50px);
-        }
-      }
-
-      #landing-watch {
-        #landing-screen-icon {
-          @include size(50px);
-        }
-      }
     }
   }
 
   #landing-cases {
     @include span-columns(12);
     background: #EBEBEB;
+    padding: 4em 0;
 
-    section#landing-cases-cards {
-      @include span-columns(10);
-      @include shift(1);
+    h2 {
+      margin-bottom: 0.1em;
+    }
+
+    p {
+      margin-top: 0.1em;
+    }
+
+    #landing-cases-arrow-left {
+      @include span-columns(1 of 12);
+
+      .btn-arrow {
+        padding-top: 100px;
+      }
+    }
+
+    #landing-cases-carousel {
+      @include span-columns(10 of 12);
+      padding-top: 20px;
+    }
+
+    #landing-cases-arrow-right {
+      @include span-columns(1 of 12);
+
+      .btn-arrow {
+        padding-top: 100px;
+      }
     }
   }
 
   #landing-editors {
     @include span-columns(12);
+    padding: 4em 0;
+
+    h2 {
+      margin-bottom: 0.1em;
+    }
+
+    p {
+      margin-top: 0.1em;
+    }
 
     #landing-editors-arrow-left {
       @include span-columns(1 of 12);
@@ -110,34 +126,81 @@
 #landing-pricing {
   @include span-columns(12);
   background: #EBEBEB;
-  height: 550px;
+  padding: 4em 0;
+
+  h2 {
+    margin-bottom: 0.1em;
+  }
+
+  p {
+    margin-top: 0.1em;
+  }
+
+  #landing-pricing-table-header {
+    @include span-columns(10);
+    @include shift(1);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+
+    #landing-teaser-reel-header {
+      @include span-columns(3 of 10);
+    }
+
+    #landing-premium-reel-header {
+      @include span-columns(3 of 10);
+      background: #16A085;
+      color: white;
+      padding-top: 10px;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    #landing-vip-reel-header {
+      @include span-columns(3 of 10);
+    }
+  }
 
   #landing-pricing-table {
     @include span-columns(10);
     @include shift(1);
     display: flex;
-    height: 400px;
+    height: 550px;
     justify-content: space-between;
-    padding-top: 50px;
 
     #landing-teaser-reel {
       @include span-columns(3 of 10);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 500px;
       border: 1px solid #16A085;
-      padding: 15px;
+      padding: 25px;
       text-align: center;
     }
 
     #landing-premium-reel {
       @include span-columns(3 of 10);
-      border: 1px solid #16A085;
-      padding: 15px;
-      text-align: center;
+
+      #landing-premium-reel-content {
+        display: flex;
+        flex-direction: column;
+        height: 550px;
+        justify-content: space-between;
+        border: 5px solid #16A085;
+        padding: 25px;
+        text-align: center;
+      }
     }
 
     #landing-vip-reel {
       @include span-columns(3 of 10);
+      display: flex;
+      flex-direction: column;
+      height: 500px;
+      justify-content: space-between;
       border: 1px solid #16A085;
-      padding: 15px;
+      padding: 25px;
       text-align: center;
 
     }
@@ -165,13 +228,19 @@
   }
 }
 
-.pricing-table-play { @include size(20px); }
-
-.arrow-left, .arrow-right { @include size(50px); }
-
 .reel-pricing {
   font-size: 2em;
   color: #16A085;
 }
 
+.watch-example { color: #16A085; }
+
 .get-started-wrap { margin-top: 70px; }
+
+#landing-cloud-icon,
+#landing-pencil-icon,
+#landing-screen-icon { @include size(50px); }
+
+.arrow-left, .arrow-right { @include size(50px); }
+
+.pricing-table-play { @include size(20px); }
