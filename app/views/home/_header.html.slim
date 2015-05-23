@@ -22,4 +22,6 @@ nav#landing-site-navigation role='navigation'
   input.landing-input type='text' placeholder='Name'
   input.landing-input type='text' placeholder='Email'
   button.btn-landing.btn-get-started Get Started
-  button.btn-landing#btn-facebook Log in with Facebook
+  button.btn-landing#btn-facebook
+    = image_tag 'landing/facebook.png', id: 'landing-facebook-icon'
+    span Log in with Facebook
