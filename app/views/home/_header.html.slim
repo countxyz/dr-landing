@@ -1,24 +1,24 @@
-section#landing-title
-  section#landing-dir-logo
+nav#landing-site-navigation role='navigation'
+  #landing-dir-logo
     = image_tag 'site/logo-white.svg'
 
-  nav#landing-site-navigation role='navigation'
+  #landing-navigation-links
     ul
-      li = link_to 'BLOG', 'https://www.dreamitreel.com/blog', target: '_blank'
-      li = link_to 'FAQ',  '#'
+      li = link_to 'BLOG', 'https://www.dreamitreel.com/blog'
+      li = link_to 'FAQ',  'https://www.dreamitreel.com/pages/faq'
       li
         button.btn-landing#btn-sign-in Sign In
 
-section#landing-carousel
+#landing-play
   = image_tag 'actions/audio-video-outline-play.svg', id: 'landing-play-icon'
 
-section#landing-carousel-title
+#landing-title
   h1 GET YOUR RAW FOOTAGE PROFESSIONALY EDITED
 
-section#landing-carousel-subtitle
+#landing-subtitle
   span SHOOT IT. UPLOAD IT. WE DO THE REST.
 
-section#landing-sign-up
+#landing-sign-up
   input.landing-input type='text' placeholder='Name'
   input.landing-input type='text' placeholder='Email'
   button.btn-landing.btn-get-started Get Started

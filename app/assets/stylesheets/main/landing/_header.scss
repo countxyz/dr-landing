@@ -3,19 +3,22 @@
   background-size: 100%;
   background-repeat: no-repeat;
 
-  #landing-title {
+  #landing-site-navigation {
+    display: -webkit-flex;
     display: flex;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
 
     #landing-dir-logo {
       padding: 1em;
 
       img {
-        @include size(200px 30px);
+        @include size(200px 40px);
       }
     }
 
-    #landing-site-navigation {
+    #landing-navigation-links {
       padding-right: 1em;
 
       ul li {
@@ -29,17 +32,22 @@
     }
   }
 
-  #landing-carousel {
+  #landing-play {
+    display: -webkit-flex;
     display: flex;
+    -webkit-justify-content: center;
     justify-content: center;
+    padding-top: 100px;
 
     #landing-play-icon {
       @include size(75px);
     }
   }
 
-  #landing-carousel-title {
+  #landing-title {
+    display: -webkit-flex;
     display: flex;
+    -webkit-justify-content: center;
     justify-content: center;
 
     h1 {
@@ -48,8 +56,10 @@
     }
   }
 
-  #landing-carousel-subtitle {
+  #landing-subtitle {
+    display: -webkit-flex;
     display: flex;
+    -webkit-justify-content: center;
     justify-content: center;
 
     span {
@@ -59,9 +69,11 @@
   }
 
   #landing-sign-up {
+    display: -webkit-flex;
     display: flex;
+    -webkit-justify-content: center;
     justify-content: center;
-    padding: 150px 0 100px 0;
+    padding: 100px 0 100px 0;
 
     .landing-input {
       padding: 0.5em;
@@ -69,6 +81,7 @@
     }
 
     .btn-landing {
+      font-weight: 700;
       margin-right: 1em;
     }
   }
