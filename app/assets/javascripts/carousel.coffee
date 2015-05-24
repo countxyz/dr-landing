@@ -18,7 +18,9 @@ class window.Carousel
         @carousel.addClass 'is-reversing'
 
       new_seat.addClass(@lastSeat).css 'order', 1
+      new_seat.addClass(@lastSeat).css '-webkit-order', 1
       new_seat = @next(new_seat).css('order', i) for i in [2..@seats.length]
+      new_seat = @next(new_seat).css('-webkit-order', i) for i in [2..@seats.length]
 
       @carousel.removeClass 'is-set'
 

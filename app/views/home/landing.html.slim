@@ -1,8 +1,57 @@
 header#landing-header role='banner'
   = render 'header'
 
-section#landing-content
-  = render 'content'
+section#landing-how-it-works
+  = render 'how_it_works'
+
+section#landing-cases
+  h2.cases-title CASES
+  p.cases-subtitle See what we've done for others!
+
+  #landing-cases-arrow-left
+    button.btn-arrow.toggle-cases
+      = image_tag 'actions/arrow-left.svg', class: 'arrow-left'
+
+  #landing-cases-carousel
+    = render 'cases_carousel'
+
+  #landing-cases-arrow-right
+    button.btn-arrow.toggle-cases data-toggle='next'
+      = image_tag 'actions/arrow-right.svg', class: 'arrow-right'
+
+section#landing-editors
+  h2.editors-title OUR EDITORS
+  p.editors-subtitle Meet the team behind Dreamitreel
+
+  #landing-editors-arrow-left
+    button.btn-arrow.toggle-editors
+      = image_tag 'actions/arrow-left.svg', class: 'arrow-left'
+
+  #landing-editors-carousel
+    = render 'editor_carousel'
+
+  #landing-editors-arrow-right
+    button.btn-arrow.toggle-editors data-toggle='next-editor'
+      = image_tag 'actions/arrow-right.svg', class: 'arrow-right'
+
+section#landing-pricing
+  h2.text-center Pricing
+  p.text-center Choose the package that fits your needs
+
+  section#landing-pricing-table-header
+    section#landing-teaser-reel-header
+    section#landing-premium-reel-header
+      p Most Popular
+    section#landing-vip-reel-header
+
+
+  section#landing-pricing-table
+    = render 'pricing_tables'
+
+section#landing-get-started
+  section#landing-get-started-content
+    span NULLA SAPIZZLE SHIZZLE MY NIZZLE
+    button#btn-get-started-section.btn-landing Get Started
 
 footer#landing-footer role='contentinfo'
   = render 'footer'

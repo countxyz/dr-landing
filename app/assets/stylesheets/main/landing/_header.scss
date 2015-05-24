@@ -4,12 +4,8 @@
   background-repeat: no-repeat;
 
   #landing-site-navigation {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
+    @include flexbox;
+    @include flex-justice(space-between);
 
     #landing-dir-logo {
       padding: 1em;
@@ -34,10 +30,8 @@
   }
 
   #landing-play {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: center;
-    justify-content: center;
+    @include flexbox;
+    @include flex-justice(center);
     padding-top: 100px;
 
     #landing-play-icon {
@@ -46,10 +40,8 @@
   }
 
   #landing-title {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: center;
-    justify-content: center;
+    @include flexbox;
+    @include flex-justice(center);
 
     h1 {
       color: white;
@@ -58,10 +50,8 @@
   }
 
   #landing-subtitle {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: center;
-    justify-content: center;
+    @include flexbox;
+    @include flex-justice(center);
 
     span {
       color: white;
@@ -70,10 +60,8 @@
   }
 
   #landing-sign-up {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: center;
-    justify-content: center;
+    @include flexbox;
+    @include flex-justice(center);
     padding: 100px 0 100px 0;
 
     .landing-input {

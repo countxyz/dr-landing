@@ -2,8 +2,8 @@
 
 .carousel {
   @include position(relative, null null null -100%);
-  display: flex;
-  justify-content: space-between;
+  @include flexbox;
+  @include flex-justice(space-between);
   list-style: none;
   margin: 0;
   padding: 0;
@@ -36,15 +36,16 @@
 }
 
 .carousel-seat {
-  flex: 1 0 100%;
-  order: 2;
+  @include flex(1 0 100%);
+  @include flex-order(2);
 
   @media (min-width: 30em) {
-    flex-basis: 50%;
+    @include flex-basis(50%);
   }
+
   @media (min-width: 40em) {
-    flex-basis: 33.33333%;
+    @include flex-basis(33.33333%);
   }
 }
 
-.last-case, .last-editor { order: 1; }
+.last-case, .last-editor { @include flex-order(1); }
