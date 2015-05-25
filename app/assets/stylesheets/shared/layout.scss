@@ -1,6 +1,7 @@
-body {
-  @include outer-container;
-  min-height: 100vh;
-}
+* { margin: 0; }
+
+html, body, main { height: 100%; }
+
+body { @include outer-container; }
 
 main { @include span-columns(12); }

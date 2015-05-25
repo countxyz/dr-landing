@@ -1,0 +1,66 @@
+#landing-editors {
+  @include span-columns(12);
+  height: 450px;
+  margin: 0 auto;
+  padding: 2em 0;
+  text-align: center;
+
+  h2.editors-title {
+    margin-bottom: 0.1em;
+  }
+
+  p.editors-subtitle {
+    margin-top: 0.1em;
+    padding-bottom: 25px;
+  }
+
+  #landing-editors-arrow-left {
+    @include span-columns(1 of 12);
+    height: 90%;
+
+    .btn-arrow {
+      padding-top: 100px;
+    }
+  }
+
+  #landing-editors-carousel {
+    @include span-columns(10 of 12);
+    height: 90%;
+  }
+
+  #landing-editors-arrow-right {
+    @include span-columns(1 of 12);
+    height: 90%;
+
+    .btn-arrow {
+      padding-top: 100px;
+    }
+  }
+}
+
+.carousel-editor {
+  @include size(200px 300px);
+
+  img {
+    @include size(250px 175px);
+    display: block;
+    margin: 0 auto;
+  }
+
+  .editor-title {
+    margin: 0.8em 0.8em 0.1em 0.8em;
+  }
+
+  .editor-position {
+    color: #16A085;
+    font-size: 0.8em;
+    font-style: italic;
+    margin-top: 0.1em;
+  }
+
+  .editor-description {
+    font-size: 0.7em;
+    margin: 0 5em;
+    padding-top: 20px;
+  }
+}

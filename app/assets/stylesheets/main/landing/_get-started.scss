@@ -1,0 +1,19 @@
+#landing-get-started {
+  @include size(100px);
+  @include span-columns(12);
+  background: #16A085;
+
+  #landing-get-started-content {
+    @include span-columns(12);
+    @include flexbox;
+    @include flex-justice(center);
+    @include align-items(center);
+    height: 100%;
+    background: #16A085;
+    color: white;
+
+    span {
+      padding-right: 50px;
+    }
+  }
+}

@@ -1,0 +1,196 @@
+#landing-pricing {
+  @include span-columns(12);
+  background-image: image-url('landing/pricing-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 500px;
+  margin: 0 auto;
+  padding: 2em;
+  text-align: center;
+
+  #landing-pricing-title {
+    height: 20%;
+
+    h2 {
+      @include span-columns(12);
+      @include flexbox;
+      @include flex-justice(center);
+    }
+
+    p {
+      @include span-columns(12);
+      @include flexbox;
+      @include flex-justice(center);
+    }
+  }
+
+  #landing-pricing-tables {
+    @include span-columns(12);
+    @include flexbox;
+    @include flex-justice(center);
+    @include align-items(center);
+    height: 80%;
+
+    #landing-teaser-reel {
+      @include span-columns(3);
+      border: 1px solid lightgrey;
+      height: 80%;
+      padding: 1em;
+
+      #teaser-title {
+        height: 15%;
+      }
+
+      #reel-cost {
+        height: 20%;
+
+        .reel-pricing {
+          color: #16A085;
+          font-size: 1.5em;
+        }
+      }
+
+      #reel-description {
+        height: 30%;
+
+        p {
+          font-size: 0.8em;
+        }
+      }
+
+      #reel-example {
+        @include flexbox;
+        @include flex-justice(center);
+        @include align-items(space-between);
+        height: 20%;
+
+        span {
+          padding-right: 0.5em;
+        }
+      }
+
+      #reel-started {
+        @include size(100% 20%);
+
+        button {
+          width: 80%;
+        }
+      }
+    }
+
+    #landing-premium-reel {
+      @include span-columns(3);
+      height: 100%;
+
+      #landing-premium-reel-header {
+        @include flexbox;
+        @include flex-justice(center);
+        @include align-items(center);
+        background: #16A085;
+        color: white;
+        font-weight: 700;
+        height: 10%;
+        letter-spacing: 0.0625em;
+      }
+
+      #landing-premium-reel-content {
+        border: 3px solid #16A085;
+        height: 90%;
+        padding: 1em;
+
+        #premium-title {
+          height: 15%;
+        }
+
+        #premium-cost {
+          height: 20%;
+
+          .reel-pricing {
+            color: #16A085;
+            font-size: 1.5em;
+          }
+        }
+
+        #premium-description {
+          height: 30%;
+
+            p {
+              font-size: 0.8em;
+            }
+        }
+
+        #premium-example {
+          @include flexbox;
+          @include flex-justice(center);
+          @include align-items(space-between);
+          height: 20%;
+
+          span {
+            padding-right: 0.5em;
+          }
+        }
+
+        #premium-started {
+          @include size(100% 20%);
+
+          button {
+            width: 80%;
+          }
+        }
+      }
+    }
+
+    #landing-vip-reel {
+      @include span-columns(3);
+      border: 1px solid lightgrey;
+      height: 80%;
+      padding: 1em;
+
+      #vip-title {
+        height: 15%;
+      }
+
+      #vip-cost {
+        height: 20%;
+
+        .reel-pricing {
+          color: #16A085;
+          font-size: 1.5em;
+        }
+      }
+
+      #vip-description {
+        height: 30%;
+
+        p {
+          font-size: 0.8em;
+        }
+      }
+
+      #vip-example {
+        @include flexbox;
+        @include flex-justice(center);
+        @include align-items(space-between);
+        height: 20%;
+
+        span {
+          padding-right: 0.5em;
+        }
+      }
+
+      #vip-started {
+        @include size(100% 20%);
+
+        button {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
+.watch-example { color: #16A085; }
+
+.pricing-table-play { @include size(20px); }

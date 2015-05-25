@@ -1,15 +1,13 @@
 #landing-footer {
-  @include size(100px);
   @include span-columns(12);
+  @include flexbox;
+  @include flex-justice(center);
+  @include align-items(center);
   background: #141414;
-  display: flex;
-  justify-content: space-between;
+  height: 100px;
 
   #landing-footer-logo {
-    @include span-columns(4);
-    align-items: center;
-    display: flex;
-    justify-content: center;
+    @include span-columns(3);
 
     img {
       @include size(200px 30px);
@@ -18,12 +16,9 @@
 
   #landing-footer-links {
     @include span-columns(4);
-    align-items: center;
-    display: flex;
-    justify-content: center;
 
     ul li {
-      display: inline-block;
+      display: inline;
       padding-right: 1em;
 
       a {
@@ -33,10 +28,7 @@
   }
 
   #landing-footer-social_media {
-    @include span-columns(4);
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
+    @include span-columns(3);
 
     ul li {
       display: inline;

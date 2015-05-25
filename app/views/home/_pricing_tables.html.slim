@@ -1,36 +1,64 @@
-section#landing-teaser-reel
-  h3.text-center TEASER REEL
-  span.reel-pricing $45
-  p
-    | The Best moments of your all of your footage condensed into a 30 second
-      highlight
-  p.watch-example
-    | Watch example
-      #{image_tag 'actions/audio-video-outline-play.svg', class: 'pricing-table-play' }
-  p.get-started-wrap
-    button.btn-landing.btn-get-started Get Started
+#landing-pricing-title
+  h2 Pricing
+  p Choose the package that fits your needs
 
-section#landing-premium-reel
-  section#landing-premium-reel-content
-    h3.text-center PREMIUM REEL
-    span.reel-pricing $59+
-    p
-      | Get your story told the way you always imagined with 1-4 minutes of video
-        editing
-    p.watch-example
-      | Watch example
-        #{image_tag 'actions/audio-video-outline-play.svg', class: 'pricing-table-play' }
-    p.get-started-wrap
+#landing-pricing-tables
+  #landing-teaser-reel
+    #teaser-title
+      h3 TEASER REEL
+
+    #reel-cost
+      span.reel-pricing $45
+
+    #reel-description
+      p
+        | The Best moments of your all of your footage condensed into a 30 second
+          highlight
+
+    #reel-example
+      span.watch-example Watch example
+      = image_tag 'actions/play-green.png', class: 'pricing-table-play'
+
+    #reel-started
       button.btn-landing.btn-get-started Get Started
 
-section#landing-vip-reel
-  h3.text-center VIP REEL
-  span.reel-pricing $149
-  p
-    | Our professional offering. Perfect for YouTube channel website, or
-      business content
-  p.watch-example
-    | Watch example
-      #{image_tag 'actions/audio-video-outline-play.svg', class: 'pricing-table-play' }
-  p.get-started-wrap
-    button.btn-landing.btn-get-started Get Started
+  #landing-premium-reel
+    #landing-premium-reel-header
+      span Most Popular
+    #landing-premium-reel-content
+      #premium-title
+        h3 PREMIUM REEL
+
+      #premium-cost
+        span.reel-pricing $59+
+
+      #premium-description
+        p
+          | Get your story told the way you always imagined with 1-4 minutes of video
+            editing
+
+      #premium-example
+        span.watch-example Watch example
+        = image_tag 'actions/play-green.png', class: 'pricing-table-play'
+
+      #premium-started
+        button.btn-landing.btn-get-started Get Started
+
+  #landing-vip-reel
+    #vip-title
+      h3 VIP REEL
+
+    #vip-cost
+      span.reel-pricing $149
+
+    #vip-description
+      p
+        | Our professional offering. Perfect for YouTube channel website, or
+          business content
+
+    #vip-example
+      span.watch-example Watch example
+      = image_tag 'actions/play-green.png', class: 'pricing-table-play'
+
+    #vip-started
+      button.btn-landing.btn-get-started Get Started

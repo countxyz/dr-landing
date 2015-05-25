@@ -1,0 +1,41 @@
+#landing-how-it-works {
+  @include span-columns(12);
+  height: 300px;
+  margin: 0 auto;
+  padding: 2em;
+  text-align: center;
+
+  img {
+    height: 75px;
+  }
+
+  #how-it-works-title {
+    @include span-columns(12);
+    @include flexbox;
+    @include flex-justice(center);
+
+    h2 {
+      @include span-columns(4);
+    }
+  }
+
+  #how-it-works-steps {
+    @include span-columns(12);
+    @include flexbox;
+    @include flex-justice(center);
+    @include align-items(center);
+    height: 250px;
+
+    #landing-upload {
+      @include span-columns(3);
+    }
+
+    #landing-personalize {
+      @include span-columns(3);
+    }
+
+    #landing-watch {
+      @include span-columns(3);
+    }
+  }
+}
