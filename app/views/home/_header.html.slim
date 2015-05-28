@@ -1,27 +1,39 @@
-nav#landing-site-navigation role='navigation'
-  #landing-dir-logo
-    = image_tag 'site/logo-white.svg'
+#landing-header-background
+  nav#landing-site-navigation role='navigation'
+    #landing-dir-logo
+      = image_tag 'landing/logo-white.svg'
 
-  #landing-navigation-links
-    ul
-      li = link_to 'BLOG', 'https://www.dreamitreel.com/blog'
-      li = link_to 'FAQ',  'https://www.dreamitreel.com/pages/faq'
-      li
-        button.btn-landing#btn-sign-in Sign In
+    #landing-navigation-links
+      ul
+        li = link_to 'BLOG', 'https://www.dreamitreel.com/blog'
+        li = link_to 'FAQ',  'https://www.dreamitreel.com/pages/faq'
+        li
+          button.btn-landing#btn-sign-in Sign In
 
-#landing-play
-  = image_tag 'actions/audio-video-outline-play.svg', id: 'landing-play-icon'
+  #landing-play
+    = image_tag 'landing/play.png', id: 'landing-play-icon'
 
-#landing-title
-  h1 GET YOUR RAW FOOTAGE PROFESSIONALY EDITED
+  #landing-title
+    h1 GET YOUR RAW FOOTAGE PROFESSIONALY EDITED
 
-#landing-subtitle
-  span SHOOT IT. UPLOAD IT. WE DO THE REST.
+  #landing-subtitle
+    span SHOOT IT. UPLOAD IT. WE DO THE REST.
 
-#landing-sign-up
-  input.landing-input type='text' placeholder='Name'
-  input.landing-input type='text' placeholder='Email'
-  button.btn-landing.btn-get-started Get Started
-  button.btn-landing#btn-facebook
-    = image_tag 'landing/facebook.png', id: 'landing-facebook-icon'
-    span Log in with Facebook
+  #landing-sign-up
+    .sign-up-input
+      input.landing-input type='text' placeholder='Name'
+
+    .sign-up-input
+      input.landing-input type='text' placeholder='Email'
+
+    #landing-btn-get-started
+      button.btn-landing.btn-get-started Get Started
+      p Already have an account? #{link_to 'Login',  '#'}
+
+    #landing-btn-facebook
+      button.btn-landing#btn-facebook
+        = image_tag 'landing/facebook.png', id: 'landing-facebook-icon'
+        span Log in with Facebook
+
+#landing-how-it-works-title
+  h2 HOW IT WORKS

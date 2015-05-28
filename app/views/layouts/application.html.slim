@@ -3,10 +3,11 @@ html lang='en'
 
   head
     meta charset='utf-8' content='template language' http-equiv='content-type'
+    / meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no'
 
     title Dream It Reel | Landing
 
-    = favicon_link_tag 'site/favicon.ico'
+    = favicon_link_tag 'landing/favicon.ico'
 
     = stylesheet_link_tag '//fonts.googleapis.com/css?family=Muli'
 
@@ -14,6 +15,7 @@ html lang='en'
       media: 'all', 'data-turbolinks-track' => true
 
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
+
     = csrf_meta_tags
 
   body

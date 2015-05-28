@@ -1,8 +1,6 @@
 #landing-footer {
   @include span-columns(12);
-  @include flexbox;
-  @include flex-justice(center);
-  @include align-items(center);
+  @include flex-center;
   background: #141414;
   height: 100px;
 

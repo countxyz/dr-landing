@@ -42,7 +42,7 @@
   @include size(200px 300px);
 
   img {
-    @include size(250px 175px);
+    @include size(150px);
     display: block;
     margin: 0 auto;
   }

@@ -5,8 +5,8 @@
 
   #landing-get-started-content {
     @include span-columns(12);
-    @include flexbox;
-    @include flex-justice(center);
+    @include display(flex);
+    @include justify-content(center);
     @include align-items(center);
     height: 100%;
     background: #16A085;

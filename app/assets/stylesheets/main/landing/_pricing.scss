@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
-  height: 500px;
+  height: 450px;
   margin: 0 auto;
   padding: 2em;
   text-align: center;
@@ -15,22 +15,20 @@
 
     h2 {
       @include span-columns(12);
-      @include flexbox;
-      @include flex-justice(center);
+      @include display(flex);
+      @include justify-content(center);
     }
 
     p {
       @include span-columns(12);
-      @include flexbox;
-      @include flex-justice(center);
+      @include display(flex);
+      @include justify-content(center);
     }
   }
 
   #landing-pricing-tables {
     @include span-columns(12);
-    @include flexbox;
-    @include flex-justice(center);
-    @include align-items(center);
+    @include flex-center;
     height: 80%;
 
     #landing-teaser-reel {
@@ -61,8 +59,8 @@
       }
 
       #reel-example {
-        @include flexbox;
-        @include flex-justice(center);
+        @include display(flex);
+        @include justify-content(center);
         @include align-items(space-between);
         height: 20%;
 
@@ -85,9 +83,7 @@
       height: 100%;
 
       #landing-premium-reel-header {
-        @include flexbox;
-        @include flex-justice(center);
-        @include align-items(center);
+        @include flex-center;
         background: #16A085;
         color: white;
         font-weight: 700;
@@ -122,8 +118,8 @@
         }
 
         #premium-example {
-          @include flexbox;
-          @include flex-justice(center);
+          @include display(flex);
+          @include justify-content(center);
           @include align-items(space-between);
           height: 20%;
 
@@ -170,8 +166,8 @@
       }
 
       #vip-example {
-        @include flexbox;
-        @include flex-justice(center);
+        @include display(flex);
+        @include justify-content(center);
         @include align-items(space-between);
         height: 20%;
 
